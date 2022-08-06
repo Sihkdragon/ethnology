@@ -1,6 +1,6 @@
-# Ethology - Web Based Indonesian Sample VSTi
+# Ethology - Web Based Indonesian Sample Based VSTi
 
-This project was created by [Ditotisi Rasyud Sumpena](https://github.com/sihkdragon).
+This project was created by [Ditotisi Rasyid Sumpena](https://github.com/sihkdragon).
 
 ## Spesification of This APP
 
