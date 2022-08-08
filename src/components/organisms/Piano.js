@@ -1,7 +1,7 @@
 import React from "react";
 
 const Piano = () => {
-  return <div>Piano</div>;
+  return <div className="rounded-md">Piano</div>;
 };
 
 export default Piano;
