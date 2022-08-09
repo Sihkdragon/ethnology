@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'Javanese Text';
+    src: local('Javanese Text'), local('JavaneseText'),
+        url('JavaneseText.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Java Calligraphy';
+    src: local('Java Calligraphy'), local('JavaCalligraphy'),
+        url('JavaCalligraphy.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
