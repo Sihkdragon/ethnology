@@ -1,6 +1,5 @@
 import React from "react";
 import BigPanel from "../atoms/BigPanel";
-import { InstrumentList } from "../../global/constant";
 import SampleChoicerGroup from "../molecules/SampleChoicerGroup";
 const SampleChoicer = () => {
   return (

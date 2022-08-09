@@ -4,15 +4,18 @@ import angklung from "../../assets/img/angklung.jpg";
 import bonang from "../../assets/img/bonang.jpg";
 import gambang from "../../assets/img/gambang.jpg";
 import saron from "../../assets/img/saron.png";
-const InstrumentView = ({ InstrumentNameProps }) => {
+import { SampleActive } from "../../global/state";
+import { useAtom } from "jotai";
+const InstrumentView = () => {
+  const [InstrumentName] = useAtom(SampleActive);
   let Instrumenname = angklung;
-  if (InstrumentNameProps === "angklung") {
+  if (InstrumentName === "angklung") {
     Instrumenname = angklung;
-  } else if (InstrumentNameProps === "bonang") {
+  } else if (InstrumentName === "bonang") {
     Instrumenname = bonang;
-  } else if (InstrumentNameProps === "gambang") {
+  } else if (InstrumentName === "gambang") {
     Instrumenname = gambang;
-  } else if (InstrumentNameProps === "saron") {
+  } else if (InstrumentName === "saron") {
     Instrumenname = saron;
   }
   return (
