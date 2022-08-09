@@ -1,6 +1,6 @@
 const BigPanel = ({ children }) => {
   return (
-    <div className="bg-white rounded-md border-2 border-yellow-900 w-[550px] h-[280px]">
+    <div className="bg-white rounded-md border-4  shadow-inner border-choc-dark w-full h-full">
       {children}
     </div>
   );

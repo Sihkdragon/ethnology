@@ -1,7 +1,15 @@
 import React from "react";
-
-const InstrumentNamePanel = () => {
-  return <div className="bg-slate-200 h-20 w-96 rounded-md">Angklung</div>;
+import { SampleActive } from "../../global/state";
+import { useAtom } from "jotai";
+const InstrumentNamePanel = ({ InstrumentName }) => {
+  const [ActiveSampleName] = useAtom(SampleActive);
+  return (
+    <div className="bg-choc-light h-24 w-96 rounded-md border-4  shadow-inner border-choc-dark py-5 text-center">
+      <span className="text-white font-secondary text-4xl capitalize tracking-widest ">
+        {ActiveSampleName}
+      </span>
+    </div>
+  );
 };
 
 export default InstrumentNamePanel;

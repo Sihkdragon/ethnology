@@ -4,9 +4,9 @@ import InstrumentNamePanel from "../molecules/InstrumentNamePanel";
 
 const LeftCenterGroup = () => {
   return (
-    <div className="flex justify-between w-[550px] ">
+    <div className="flex justify-between w-full ">
       <Knob />
-      <InstrumentNamePanel />
+      <InstrumentNamePanel InstrumentName={"saron"} />
     </div>
   );
 };
