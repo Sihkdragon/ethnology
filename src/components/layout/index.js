@@ -7,22 +7,25 @@ import SampleChoicer from "../organisms/SampleChoicer";
 
 const MainLayout = () => {
   return (
-    <section className="bg-transparent  w-full h-full relative pt-1">
-      <h1 className="text-pastel-dark text-center font-main text-lg font-semibold">
-        Ethnology
-      </h1>
-      <p className="text-center font-main text-pastel-dark mb-2">
-        Virtual Studio Technology Indonesia Instrument
-      </p>
-      <div className=" h-[280px] w-full grid grid-cols-2 gap-56">
+    <section className="bg-transparent w-full flex flex-col h-full justify-between m-auto ">
+      <div className="pt-2">
+        <h1 className="text-pastel-dark text-center font-main text-lg font-semibold">
+          Ethnology
+        </h1>
+        <p className="text-center font-main text-pastel-dark mb-2">
+          Virtual Studio Technology Indonesia Instrument
+        </p>
+      </div>
+
+      <div className="w-full grid grid-cols-2 gap-x-56 ">
         <InstrumentView InstrumentNameProps={"gambang"} />
         <SampleChoicer />
       </div>
-      <div className="w-full grid grid-cols-2 gap-56 my-6">
+      <div className="w-full h-24 grid grid-cols-2 gap-x-56">
         <LeftCenterGroup />
         <PanelADSR />
       </div>
-      <div className="mx-auto absolute bottom-0 left-0 right-0 h-44 border border-black rounded border-y-2">
+      <div className="h-44 border border-black rounded border-y-2 ">
         <Piano />
       </div>
     </section>
