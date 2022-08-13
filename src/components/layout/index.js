@@ -1,7 +1,7 @@
 import React from "react";
 import InstrumentView from "../organisms/InstrumentView";
 import LeftCenterGroup from "../organisms/LeftCenterGroup";
-import PanelADSR from "../organisms/PanelADSR";
+import Feature from "../organisms/Feature";
 import Piano from "../organisms/Piano";
 import SampleChoicer from "../organisms/SampleChoicer";
 
@@ -23,7 +23,7 @@ const MainLayout = () => {
       </div>
       <div className="w-full h-24 grid grid-cols-2 gap-x-56">
         <LeftCenterGroup />
-        <PanelADSR />
+        <Feature />
       </div>
       <div className="h-44 border border-black rounded border-y-2 ">
         <Piano />
