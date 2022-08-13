@@ -2,3 +2,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer {
+  #volumeslider {
+    @apply w-20 h-2 rounded bg-orange-light;
+  }
+  #volumeslider::-moz-range-thumb {
+    @apply rounded bg-white w-[6px] h-5;
+  }
+}
