@@ -39,7 +39,7 @@ const PanelADSR = () => {
           type="range"
           name=""
           id="volumeslider"
-          style={{ WebkitAppearance: "none", appearance: "none" }}
+          // style={{ WebkitAppearance: "none", appearance: "none" }}
           className="-rotate-90 duration-100 ease-linear"
           max="10"
           min="0"
