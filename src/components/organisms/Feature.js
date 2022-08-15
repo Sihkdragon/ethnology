@@ -4,7 +4,7 @@ import { isLetterDisplayed, isSustainON } from "../../global/state";
 import FeatureButton from "../atoms/FeatureButton";
 
 const PanelADSR = () => {
-  const [Volume, setVolume] = useState(0);
+  const [Volume, setVolume] = useState(2.5);
   const [LetterDisplayed, setLetterDisplayed] = useAtom(isLetterDisplayed);
   const [SustainStatus, setSustainStatus] = useAtom(isSustainON);
 

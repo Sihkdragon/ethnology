@@ -86,4 +86,12 @@ const key_to_note = [
   { from: "B5", to: "M" },
 ];
 
-export { key, InstrumentList, key_to_note };
+const KeyWithInputIndexMin = 19;
+const KeyWithInputIndexMax = 42;
+export {
+  key,
+  InstrumentList,
+  key_to_note,
+  KeyWithInputIndexMin,
+  KeyWithInputIndexMax,
+};
