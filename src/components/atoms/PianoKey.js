@@ -1,7 +1,11 @@
 import { useAtom } from "jotai";
 import { useEffect } from "react";
 import { useState } from "react";
-import { key_to_note } from "../../global/constant";
+import {
+  key_to_note,
+  KeyWithInputIndexMin,
+  KeyWithInputIndexMax,
+} from "../../global/constant";
 import { isLetterDisplayed } from "../../global/state";
 
 const PianoKey = ({ note, indeks, pressedKeys }) => {
@@ -17,7 +21,10 @@ const PianoKey = ({ note, indeks, pressedKeys }) => {
   };
 
   useEffect(() => {
-    console.log(pressedKeys);
+    if (indeks >= KeyWithInputIndexMin && indeks <= KeyWithInputIndexMax) {
+      pressedKeys.includes(key_to_note[indeks - 19].to) &&
+        setPressedClassName(true);
+    }
     if (note.length > 2) {
       setClassName("pianokeyflat");
     }
