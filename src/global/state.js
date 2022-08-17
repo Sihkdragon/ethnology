@@ -1,6 +1,6 @@
 import { atom } from "jotai";
 
-const SampleActive = atom("angklung");
+const SampleActive = atom("saron");
 const isLetterDisplayed = atom(true);
 const isSustainON = atom(true);
 
