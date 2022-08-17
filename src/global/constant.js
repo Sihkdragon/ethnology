@@ -1,4 +1,3 @@
-const octave1 = ["F2", "Gb2", "G2", "Ab2", "A2", "Bb2", "B2"];
 const octave2 = [
   "C3",
   "Db3",
@@ -57,7 +56,7 @@ const octave5 = [
 ];
 
 const InstrumentList = ["angklung", "bonang", "gambang", "saron"];
-const key = [...octave1, ...octave2, ...octave3, ...octave4, ...octave5];
+const key = [...octave2, ...octave3, ...octave4, ...octave5];
 
 const key_to_note = [
   { from: "C4", to: "Q" },
@@ -86,8 +85,8 @@ const key_to_note = [
   { from: "B5", to: "M" },
 ];
 
-const KeyWithInputIndexMin = 19;
-const KeyWithInputIndexMax = 42;
+const KeyWithInputIndexMin = 12;
+const KeyWithInputIndexMax = 35;
 export {
   key,
   InstrumentList,
