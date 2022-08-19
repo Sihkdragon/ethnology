@@ -52,7 +52,6 @@ const Piano = () => {
     if (data[0] === 144) {
       let keyPress = key[data[1] - 48];
       setPressedNote(keyPress);
-      console.log(PressedNote);
       playSound(
         keyPress,
         sustainStorage ? 1 : 0,
