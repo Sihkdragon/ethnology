@@ -54,7 +54,7 @@ const octave5 = [
   "Bb7",
   "B7",
 ];
-const octave6 = ["C7"];
+const octave6 = ["C8"];
 
 const key = [...octave2, ...octave3, ...octave4, ...octave5, ...octave6];
 const InstrumentList = ["angklung", "bonang", "gambang", "saron"];

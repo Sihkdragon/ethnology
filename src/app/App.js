@@ -7,9 +7,10 @@ function App() {
   const [SampleName] = useAtom(SampleActive);
   const [SustainStatus] = useAtom(isSustainON);
   const [SampleVolume] = useAtom(Volume);
+
   useEffect(() => {
     if (!localStorage.getItem("EthnologySample")) {
-      localStorage.setItem("EthnologySample", SampleName);
+      localStorage.setItem("EthnologySample", JSON.stringify(SampleName));
     }
     if (!localStorage.getItem("EthnologySustain")) {
       localStorage.setItem("EthnologySustain", SustainStatus);
