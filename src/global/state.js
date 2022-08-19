@@ -1,7 +1,10 @@
 import { atom } from "jotai";
+import { atomWithStorage } from "jotai/utils";
 
-const SampleActive = atom("saron");
 const isLetterDisplayed = atom(true);
-const isSustainON = atom(true);
+const SampleActive = atomWithStorage("EthnologySample", "saron");
+const isSustainON = atomWithStorage("EthnologySustain", true);
+const Volume = atomWithStorage("EthnologyVolume", -4);
 
-export { SampleActive, isLetterDisplayed, isSustainON };
+const KeyPress = atom("");
+export { SampleActive, isLetterDisplayed, isSustainON, Volume, KeyPress };

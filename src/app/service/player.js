@@ -1,17 +1,15 @@
 import * as Tone from "tone";
 import { BASE_URL } from "../../global/app";
-
-function playSound(note, release, InstrumenSample) {
+function playSound(note, release, InstrumenSample, SampleVolume) {
   const SamplerData = {
     urls: {
       C7: `${InstrumenSample}.wav`,
     },
-    release: 1,
+    release: 2,
     baseUrl: BASE_URL,
   };
-
   const sampler = new Tone.Sampler(SamplerData).toDestination();
-  sampler.volume.value = 20;
+  sampler.volume.value = SampleVolume;
   Tone.loaded().then(() => {
     sampler.triggerAttackRelease([note], release);
   });
