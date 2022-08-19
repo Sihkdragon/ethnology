@@ -8,10 +8,6 @@ function onMIDIsuccess(midiAccess) {
   });
 }
 
-function onMIDIfailure() {
-  alert("cant connect");
-}
-
 function handleMIDIinput(e) {
   let sampleStorage = JSON.parse(localStorage.getItem("EthnologySample"));
   let sustainStorage = JSON.parse(localStorage.getItem("EthnologySustain"));
@@ -20,13 +16,16 @@ function handleMIDIinput(e) {
   );
   const data = e.data;
   if (data[0] === 144) {
+    console.log(data[1]);
     playSound(
-      key[data[1] - 36],
+      key[data[1] - 48],
       sustainStorage ? 1 : 0,
       sampleStorage,
-      volumeStorage
+      volumeStorage / 4
     );
   }
-  console.log(data);
+}
+function onMIDIfailure() {
+  alert("cant connect");
 }
 export { onMIDIfailure, onMIDIsuccess, handleMIDIinput };
