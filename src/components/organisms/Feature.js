@@ -35,7 +35,8 @@ const PanelADSR = () => {
         >
           Download
         </FeatureButton>
-        <button className="text-white font-main text-sm 2xl:text-base block">
+
+        <button className="text-white font-main text-xs xl:text-sm 2xl:text-base block">
           Download Sample
         </button>
       </div>

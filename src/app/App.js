@@ -1,6 +1,7 @@
 import { useAtom } from "jotai";
 import { useEffect } from "react";
 import Page from "../components/page";
+import SmallScreen from "../components/page/SmallScreen";
 import { isSustainON, SampleActive, Volume } from "../global/state";
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
   }, []);
   return (
     <div className="w-screen h-screen 2xl:py-20 bg-black/75">
+      <SmallScreen />
       <Page />
     </div>
   );
