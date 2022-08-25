@@ -53,7 +53,7 @@ const PianoKey = ({ note, indeks, PressedNote, pressedKeys }) => {
 
   return (
     <button
-      className={`${className} ${PressedclassName ? "pressed" : ""}`}
+      className={`my-shadow ${className} ${PressedclassName ? "pressed" : ""}`}
       onMouseDown={onKeyDownHandler}
       onMouseUp={onKeyUpHandler}
       onClick={() => {
