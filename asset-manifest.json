@@ -1,20 +1,19 @@
 {
   "files": {
-    "main.css": "/ethnology/static/css/main.72bd9976.css",
-    "main.js": "/ethnology/static/js/main.a68aef34.js",
-    "static/media/background.jpg": "/ethnology/static/media/background.4f576faa0253fc46fb6a.jpg",
+    "main.css": "/ethnology/static/css/main.caf7ecc4.css",
+    "main.js": "/ethnology/static/js/main.cfb6ad2a.js",
+    "static/media/background.jpg": "/ethnology/static/media/background.90a0d702defcc7d34de2.jpg",
     "static/media/JavaneseText.ttf": "/ethnology/static/media/JavaneseText.ea28dc455ae20f5c5ee6.ttf",
     "static/media/angklung.jpg": "/ethnology/static/media/angklung.391099c5399508bab298.jpg",
     "static/media/saron.png": "/ethnology/static/media/saron.88e52a10d41fdb5bb725.png",
     "static/media/JavaCalligraphy.ttf": "/ethnology/static/media/JavaCalligraphy.f4a1f0076b1851f2a701.ttf",
-    "static/media/icon.png": "/ethnology/static/media/icon.080d9c480f15527b52a2.png",
     "static/media/bonang.jpg": "/ethnology/static/media/bonang.b2b1678df047a4a184a0.jpg",
     "index.html": "/ethnology/index.html",
-    "main.72bd9976.css.map": "/ethnology/static/css/main.72bd9976.css.map",
-    "main.a68aef34.js.map": "/ethnology/static/js/main.a68aef34.js.map"
+    "main.caf7ecc4.css.map": "/ethnology/static/css/main.caf7ecc4.css.map",
+    "main.cfb6ad2a.js.map": "/ethnology/static/js/main.cfb6ad2a.js.map"
   },
   "entrypoints": [
-    "static/css/main.72bd9976.css",
-    "static/js/main.a68aef34.js"
+    "static/css/main.caf7ecc4.css",
+    "static/js/main.cfb6ad2a.js"
   ]
 }
