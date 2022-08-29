@@ -7,6 +7,7 @@ import {
   key_to_note,
   KeyWithInputIndexMin,
   KeyWithInputIndexMax,
+  RESPONSIVE_KEYS,
 } from "../../global/constant";
 import {
   isLetterDisplayed,
@@ -47,7 +48,15 @@ const PianoKey = ({ note, indeks, PressedNote, pressedKeys }) => {
       }, 200);
     }
     if (note.length > 2) {
-      setClassName("pianokeyflat");
+      if (RESPONSIVE_KEYS.includes(note)) {
+        setClassName("pianokeyflatResp");
+      } else {
+        setClassName("pianokeyflat");
+      }
+    } else {
+      if (RESPONSIVE_KEYS.includes(note)) {
+        setClassName("pianokeyResp");
+      }
     }
   }, [pressedKeys, PressedNote]);
 
@@ -60,7 +69,7 @@ const PianoKey = ({ note, indeks, PressedNote, pressedKeys }) => {
         playSound(note, isSustaiOn ? 1 : 0, ActiveSample, SampleVolume);
       }}
     >
-      <span className="absolute bottom-2 uppercase font-semibold left-3">
+      <span className="absolute bottom-2 uppercase font-semibold left-3 hidden sm:inline">
         {!letterDisplayed
           ? ""
           : note_to_key.find((keynote) => {

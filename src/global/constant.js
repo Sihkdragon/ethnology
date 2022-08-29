@@ -54,10 +54,25 @@ const octave5 = [
   "Bb7",
   "B7",
 ];
-const octave6 = ["C7"];
+const octave6 = ["C8"];
 
 const key = [...octave2, ...octave3, ...octave4, ...octave5, ...octave6];
 const InstrumentList = ["angklung", "bonang", "gambang", "saron"];
+const RESPONSIVE_KEYS = [
+  "C5",
+  "Db5",
+  "D5",
+  "Eb5",
+  "E5",
+  "F5",
+  "Gb5",
+  "G5",
+  "Ab5",
+  "A5",
+  "Bb5",
+  "B5",
+  "C6",
+];
 const note_to_key = [
   { from: "C5", to: "Q" },
   { from: "Db5", to: "2" },
@@ -119,4 +134,5 @@ export {
   KeyWithInputIndexMin,
   KeyWithInputIndexMax,
   key_to_note,
+  RESPONSIVE_KEYS,
 };

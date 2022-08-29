@@ -20,8 +20,12 @@ const InstrumentView = () => {
   }
   return (
     <BigPanel>
-      <figure className="w-full h-full flex justify-center items-center">
-        <img src={Instrumenname} alt="Instrument" className="w-60 mx-auto" />
+      <figure className="w-full h-full flex justify-center items-center overflow-hidden">
+        <img
+          src={Instrumenname}
+          alt="Instrument"
+          className="w-44 sm:w-60 mx-auto"
+        />
       </figure>
     </BigPanel>
   );

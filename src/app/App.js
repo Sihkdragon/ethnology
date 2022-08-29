@@ -1,7 +1,6 @@
 import { useAtom } from "jotai";
 import { useEffect } from "react";
 import Page from "../components/page";
-import SmallScreen from "../components/page/SmallScreen";
 import { isSustainON, SampleActive, Volume } from "../global/state";
 
 function App() {
@@ -10,7 +9,7 @@ function App() {
   const [SampleVolume] = useAtom(Volume);
   useEffect(() => {
     if (!localStorage.getItem("EthnologySample")) {
-      localStorage.setItem("EthnologySample", SampleName);
+      localStorage.setItem("EthnologySample", JSON.stringify(SampleName));
     }
     if (!localStorage.getItem("EthnologySustain")) {
       localStorage.setItem("EthnologySustain", SustainStatus);
@@ -20,8 +19,7 @@ function App() {
     }
   }, []);
   return (
-    <div className="w-screen h-screen 2xl:py-20 bg-black/75">
-      <SmallScreen />
+    <div className="w-screen h-screen py-0 2xl:py-20 md:bg-black/75 ">
       <Page />
     </div>
   );

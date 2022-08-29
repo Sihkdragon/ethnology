@@ -2,7 +2,7 @@ const base_url = () => {
   return window.location.href;
 };
 
-const BASE_URL = `${base_url()}audio/`;
+const BASE_URL = `${base_url()}/audio/`;
 const audio_URL = "audio/";
 const Saron_URL = "audio/";
 

@@ -18,10 +18,10 @@ const SampleChoicerGrid = ({ instrumentName }) => {
   }, [instrumentName, SampleName]);
   return (
     <li
-      className="flex items-center gap-4 cursor-pointer hover:bg-slate-300 rounded-sm py-2"
+      className="flex items-center gap-4 cursor-pointer hover:bg-slate-300 rounded-sm sm:py-2"
       onClick={SampleSelectHandler}
     >
-      <div className="border-b  border-slate-700 font-main text-xl text-choc-light capitalize border-opacity-60 w-11/12">
+      <div className="border-b  border-slate-700 font-main text-sm sm:text-xl text-choc-light capitalize border-opacity-60 w-11/12">
         {instrumentName}
       </div>
       <SampleCheckbox isSelected={isSelected} />
