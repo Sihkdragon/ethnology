@@ -74,7 +74,7 @@ const Piano = () => {
   }, []);
 
   return (
-    <div className="rounded-t-sm bg-white h-full flex">
+    <div className="rounded-t-sm bg-white h-52 sm:h-40 flex col-span-2">
       {key.map((key, index) => {
         return (
           <PianoKey

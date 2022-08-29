@@ -3,7 +3,7 @@ import InstrumentNamePanel from "../molecules/InstrumentNamePanel";
 
 const LeftCenterGroup = () => {
   return (
-    <div className="flex justify-between w-full ">
+    <div className="w-full flex">
       <InstrumentNamePanel InstrumentName={"saron"} />
     </div>
   );

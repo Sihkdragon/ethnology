@@ -26,6 +26,8 @@ function handleMIDIinput(e) {
   }
 }
 function onMIDIfailure() {
-  alert("cant connect");
+  alert(
+    "Beberapa Fitur pada Browser ini terkunci. Disarankan menggunakan Google Chrome Browser"
+  );
 }
 export { onMIDIfailure, onMIDIsuccess, handleMIDIinput };
